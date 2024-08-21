@@ -185,8 +185,49 @@ header nav button {
   border-radius: 15px; /* Bordas arredondadas da imagem */
   border: 5px solid #333; /* Define a borda: largura, estilo e cor */
 }
+/* Estilos específicos para a seção de serviços */
+.services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services .container {
+  max-width: 1200px; /* Ajuste conforme necessário para a largura do contêiner */
+  margin: 0 auto;
+}
+
+.services img {
+  max-width: 100%; /* Faz com que a imagem ocupe no máximo 100% do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove o espaçamento abaixo da imagem */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
 /* Estilos para os botões de portfólio */
 .portfolio-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os botões quebrem para a linha seguinte se não cabem na linha atual */
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  margin-top: 20px;
+}
+
+.portfolio-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px; /* Espaço entre os botões */
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.portfolio-button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+/* Estilos para os botões de portfólio */
+/*.portfolio-buttons {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -206,7 +247,7 @@ header nav button {
 .portfolio-button:hover {
   background-color: #555;
   transform: scale(1.05);
-}
+}*/
 /* Estilos para o grid do portfólio */
 .portfolio-grid {
   display: grid;
@@ -354,5 +395,57 @@ footer a:hover {
 @media (max-width: 768px) {
   .portfolio-grid {
     grid-template-columns: 1fr; /* Ajusta para uma coluna em telas menores */
+  }
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .services img {
+    max-width: 90%; /* Reduz a largura máxima da imagem em telas menores */
+  }
+
+  .portfolio-buttons {
+    flex-direction: column; /* Empilha os botões verticalmente em telas menores */
+    align-items: center; /* Centraliza os botões verticalmente */
+  }
+
+  .portfolio-button {
+    margin: 10px 0; /* Ajusta a margem para os botões em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .services img {
+    max-width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner em telas muito pequenas */
+  }
+
+  .portfolio-button {
+    padding: 8px 16px; /* Ajusta o padding dos botões em telas muito pequenas */
+    font-size: 14px; /* Ajusta o tamanho da fonte dos botões em telas muito pequenas */
+  }
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .services img {
+    max-width: 90%; /* Reduz a largura máxima da imagem em telas menores */
+  }
+
+  .portfolio-buttons {
+    flex-direction: column; /* Empilha os botões verticalmente em telas menores */
+    align-items: center; /* Centraliza os botões verticalmente */
+  }
+
+  .portfolio-button {
+    margin: 10px 0; /* Ajusta a margem para os botões em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .services img {
+    max-width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner em telas muito pequenas */
+  }
+
+  .portfolio-button {
+    padding: 8px 16px; /* Ajusta o padding dos botões em telas muito pequenas */
+    font-size: 14px; /* Ajusta o tamanho da fonte dos botões em telas muito pequenas */
   }
 }

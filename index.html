@@ -130,17 +130,17 @@
   <!-- Serviços -->
   <section id="servicos" class="services">
     <div class="container">
-      <h2>Serviços</h>
-        <div>
-          <img src="./img/Serviços.png" alt="Descrição da imagem 1">
-        </div>
-        <!-- Botões para acessar o portfólio -->
-        <div class="portfolio-buttons">
-          <a href="#portfolio1" class="portfolio-button">CIVIL</a>
-          <a href="#portfolio2" class="portfolio-button">CALDEIRARIA</a>
-          <a href="#portfolio3" class="portfolio-button">MECÂNICA</a>
-          <a href="#portfolio4" class="portfolio-button">MINERAÇÃO</a>
-        </div>
+      <h2>Serviços</h2>
+      <div>
+        <img src="./img/Serviços.png" alt="Descrição da imagem 1">
+      </div>
+      <!-- Botões para acessar o portfólio -->
+      <div class="portfolio-buttons">
+        <a href="#portfolio1" class="portfolio-button">CIVIL</a>
+        <a href="#portfolio2" class="portfolio-button">CALDEIRARIA</a>
+        <a href="#portfolio3" class="portfolio-button">MECÂNICA</a>
+        <a href="#portfolio4" class="portfolio-button">MINERAÇÃO</a>
+      </div>
     </div>
   </section>
   <!-- Portfólio -->
@@ -199,20 +199,21 @@
   <section id="contato" class="contact">
     <div class="container">
       <h2>Contato</h2>
-      <form action="#" method="post">
+      <form action="https://api.staticforms.xyz/submit" method="post">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
 
         <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone">
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
 
         <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <textarea id="mensagem" name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
 
         <button type="submit" class="cta-button">Enviar</button>
+        <input type="hidden" name="accessKey" value="0a5205d6-d8f3-434c-af62-7284b71e0e5a">
       </form>
     </div>
   </section>
